@@ -21,6 +21,7 @@ body {
   max-height: 100vh;
   background: url(/images/bg-desktop.svg), var(--Violet);
   background-repeat: no-repeat;
+  margin-top:10%;
 }
 
 /* logo ===================================*/
