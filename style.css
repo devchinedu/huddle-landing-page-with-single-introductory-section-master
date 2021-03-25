@@ -1,10 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  max-width: 100%;
-  max-height: 100vh;
   box-sizing: content-box;
-  font-family: "Poppins", sans-serif;
   transition: 0.5s ease-out all;
   -moz-transition: 0.5s ease-out all;
   -webkit-transition: 0.5s ease-out all;
@@ -19,56 +16,63 @@
 
 /* body ==================================*/
 
+html,
 body {
   display: flex;
-  width: 80%;
+  height: 100%;
+  line-height: 1.6;
   margin: auto;
   flex-direction: column;
   background: url(./images/bg-desktop.svg), var(--Violet);
   background-repeat: no-repeat;
   background-size: 100%;
-  
+  max-width: 1440px;
+  max-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 /* logo ===================================*/
 
-.logo{
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  
+.logo {
+  align-self: flex-start;
+  margin-bottom: 2em;
+  margin-top: 1em;
 }
 
 /* main ===================================*/
 
-main{
+main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.image img{
-  height: 100%;
+#image {
+  grid-column: 1 / span 1;
+  margin-right: 3em;
 }
 
-
-/* heading ==================================*/
+/* heading ===================================*/
 
 .text {
   margin-top: 10%;
-  max-width: 30rem;
+  max-width: 25rem;
 }
 
 .text h1 {
-  font-weight: bold;
-  font-size: 2.5rem;
   color: floralwhite;
   padding-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
 }
 
 .text p {
   color: floralwhite;
   text-align: justify;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2em;
 }
 
 /* Buttons ==================================*/
@@ -100,20 +104,15 @@ main{
 
 /* footer ===================================*/
 
-footer{
+footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 1rem;
-  padding-bottom: 1rem
-  
-
-  
+  padding-bottom: 1rem;
 }
 
-
 .attribution {
-
   bottom: 0;
   font-size: 11px;
   text-align: center;
@@ -122,16 +121,12 @@ footer{
   padding: 2px;
   max-height: 2rem;
   border-radius: 5px;
-  
-  
 }
 .attribution a {
   color: white;
 }
 
 .social {
-  
-
   display: flex;
   color: white;
   margin: 0.2rem;
@@ -175,17 +170,15 @@ footer{
     flex-wrap: wrap;
     text-align: center;
   }
- 
+
   .image img {
     height: auto;
   }
- 
+
   footer {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 3rem;
-    padding-top: .8rem;
-   
+    padding-top: 0.8rem;
   }
-  
 }
