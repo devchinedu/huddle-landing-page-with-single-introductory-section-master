@@ -46,7 +46,7 @@ main{
   justify-content: space-between;
 }
 
-.image img{
+#image{
   height: 100%;
 }
 
