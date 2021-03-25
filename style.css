@@ -24,7 +24,7 @@ body {
   width: 80%;
   margin: auto;
   flex-direction: column;
-  background: url(/images/bg-desktop.svg), var(--Violet);
+  background: url(./images/bg-desktop.svg), var(--Violet);
   background-repeat: no-repeat;
   background-size: 100%;
   
@@ -165,7 +165,7 @@ footer{
 
 @media screen and (max-width: 880px) {
   body {
-    background: url(/images/bg-mobile.svg) hsl(257, 40%, 49%);
+    background: url(./images/bg-mobile.svg) hsl(257, 40%, 49%);
     text-align: center;
     background-repeat: no-repeat;
     background-size: 100%;
